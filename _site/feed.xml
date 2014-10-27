@@ -5,8 +5,8 @@
     <description></description>
     <link>aedwards12.github.io/blog//</link>
     <atom:link href="aedwards12.github.io/blog//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 27 Oct 2014 16:53:52 -0500</pubDate>
-    <lastBuildDate>Mon, 27 Oct 2014 16:53:52 -0500</lastBuildDate>
+    <pubDate>Mon, 27 Oct 2014 18:04:47 -0500</pubDate>
+    <lastBuildDate>Mon, 27 Oct 2014 18:04:47 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>
@@ -29,6 +29,48 @@
         <pubDate>Mon, 27 Oct 2014 11:24:54 -0500</pubDate>
         <link>aedwards12.github.io/blog//jekyll/update/2014/10/27/welcome-to-jekyll.html</link>
         <guid isPermaLink="true">aedwards12.github.io/blog//jekyll/update/2014/10/27/welcome-to-jekyll.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
+    
+      <item>
+        <title>Margins, Borders, and Padding</title>
+        <description>&lt;h4 id=&quot;overview&quot;&gt;Overview&lt;/h4&gt;
+&lt;p&gt;All html block-level elements have five spacing properties: height, width, margin, border, and padding. When using these properties, we are primarily working with &amp;lt; div &amp;gt; tags or another block level element. &amp;lt; div &amp;gt; tags allow you to wrap, style, and position text in your webpage.&lt;/p&gt;
+
+&lt;h3 id=&quot;border&quot;&gt;Border&lt;/h3&gt;
+&lt;p&gt;Border properties allow you to specify the style and color of and elements border. ex: &lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;ss&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;black&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;border&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;bottom&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;solid&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;rgba&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;255&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;200&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i1372.photobucket.com/albums/ag340/anthonyedwardsjr/ScreenShot2014-05-06at24040AM_zps73161d19.png&quot; alt=&quot;alt text&quot; title=&quot;border-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;padding&quot;&gt;Padding&lt;/h3&gt;
+&lt;p&gt;Padding can be effectively be used to push or limit the content inside a block element. Think of it as putting up a railing before a cliff. Nothing can occupy that space between the railing and cliff. Padding also has 4 properties that can be changed independently top, bottom, left, and right. ex:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;ss&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;#same as padding: 10px 30px 10px 30px;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;padding&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;left&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i1372.photobucket.com/albums/ag340/anthonyedwardsjr/ScreenShot2014-05-06at23607AM_zps280c0fb6.png&quot; alt=&quot;alt text&quot; title=&quot;padding-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;margin&quot;&gt;Margin&lt;/h3&gt;
+&lt;p&gt;Margins clear an area around an element outside the border. Margins prevent other element from getting to close. In other words give me “back up, give me space.” Margins have 4 properties that can be changed independently top, bottom, left, and right. ex:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;top&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;margin&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i1372.photobucket.com/albums/ag340/anthonyedwardsjr/ScreenShot2014-05-06at23116AM_zpsb0ad8df8.png&quot; alt=&quot;alt text&quot; title=&quot;margin-image&quot; /&gt;&lt;/p&gt;
+
+</description>
+        <pubDate>Fri, 06 Jun 2014 11:24:54 -0500</pubDate>
+        <link>aedwards12.github.io/blog//jekyll/update/2014/06/06/Margin-Border-Padding.html</link>
+        <guid isPermaLink="true">aedwards12.github.io/blog//jekyll/update/2014/06/06/Margin-Border-Padding.html</guid>
         
         
         <category>jekyll</category>
