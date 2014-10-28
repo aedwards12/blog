@@ -5,9 +5,90 @@
     <description></description>
     <link>aedwards12.github.io/blog//</link>
     <atom:link href="aedwards12.github.io/blog//feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 27 Oct 2014 19:10:40 -0500</pubDate>
-    <lastBuildDate>Mon, 27 Oct 2014 19:10:40 -0500</lastBuildDate>
+    <pubDate>Mon, 27 Oct 2014 22:14:42 -0500</pubDate>
+    <lastBuildDate>Mon, 27 Oct 2014 22:14:42 -0500</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
+    
+      <item>
+        <title>Sql Injection, NoSql vs Sql</title>
+        <description>&lt;p&gt;&lt;img src=&quot;http://1.bp.blogspot.com/-QhOwiLtbSCg/UXwh3jz3SxI/AAAAAAAAARM/Ll9oHyb4Dxw/s1600/SQL+Injection.jpg&quot; alt=&quot;alt text&quot; title=&quot;sql-image&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;what-is-sql-injection&quot;&gt;What is Sql Injection?&lt;/h4&gt;
+
+&lt;p&gt;SQL injection is a common application layer web attack scheme used by hackers to steal data from companies. If you code is not done properly hackers are able to exploit your security vulnerability in an applications software by injecting SQL statements into an input field element on the website such as request forms, feedback forms, search bar, carts ect… These statements are sent to the backend database, if the proper code is not written to check these input SQL statements the attack will hackers to view information from the database or even wipe out all the data. As a new web developer the best way to prevent this would be to stop writing dynamic queries and/or prevent user supplied input which contains malicious SQL from affecting the logic of the executed query.&lt;/p&gt;
+
+&lt;h4 id=&quot;sql-vs-nosql&quot;&gt;Sql vs NoSql&lt;/h4&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Sql&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;NoSql&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SQL databases are primarily called as Relational Databases (RDBMS)&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NoSQL database are primarily called as non-relational or distributed database&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SQL databases are table based databases whereas NoSQL databases are document based, key-value pairs, graph databases or wide-column stores.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NoSQL databases are the collection of key-value pair, documents, graph databases or wide-column stores which do not have standard schema definitions which it needs to adhered to.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SQL databases have predefined schema&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NoSQL databases have dynamic schema for unstructured data.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SQL databases are vertically scalable&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NoSQL databases are horizontally scalable.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SQL databases uses SQL ( structured query language ) for defining and manipulating the data,&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NoSQL database, queries are focused on collection of documents. Sometimes it is also called as UnQL (Unstructured Query Language).&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SQL databases are good fit for the complex query intensive environment&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NoSQL databases are not good fit for complex queries. On a high-level, NoSQL don’t have standard interfaces to perform complex queries, and the queries themselves in NoSQL are not as powerful as SQL query language.&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;SQL database examples: MySql, Oracle, Sqlite, Postgres and MS-SQL.&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;NoSQL database examples: MongoDB, BigTable, Redis, RavenDb, Cassandra, Hbase, Neo4j and CouchDb&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;better-sql-queries&quot;&gt;Better Sql Queries&lt;/h4&gt;
+
+&lt;p&gt;To retrieve data from the database we use SQL statements. When considering performance, the best query techniques should be used. There are a few ways to do this. 1. Indexing your column is a common way to optimize your search results. 2. Use the Symbol Operator such as &amp;gt;,&amp;lt;,=,!=, etc.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;COLUMN&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Use of a postfix wildcard instead of pre or full wildcard ‘%’&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;COLUMN&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;LIKE&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;hello%&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Use the LIKE, IN, EXIST or = symbol operator instead of a negative operator such as NOT LIKE, NOT IN, NOT EXIST or != symbol. Using a negative operator will cause the search to find every single row to identify that they are all not belong or exist with the table.&lt;/p&gt;
+
+&lt;p&gt;Use the count operator to determine whether a particular data exists.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;COLUMN&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;COUNT&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;no&quot;&gt;COLUMN&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Use index Unique column, Max and Min Operators, Select the most effecient data types possible and another would be to limit the result of the query.&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;no&quot;&gt;SELECT&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;FROM&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;TABLE&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;LIMIT&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Fri, 06 Jun 2014 11:24:54 -0500</pubDate>
+        <link>aedwards12.github.io/blog//jekyll/update/2014/06/06/sql-injection-nosql-vs-sql.html</link>
+        <guid isPermaLink="true">aedwards12.github.io/blog//jekyll/update/2014/06/06/sql-injection-nosql-vs-sql.html</guid>
+        
+        
+        <category>jekyll</category>
+        
+        <category>update</category>
+        
+      </item>
     
       <item>
         <title>What is Rails?</title>
